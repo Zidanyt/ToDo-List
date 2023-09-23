@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/script.js" defer></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="todo__container">
+        <header>
+            <h1>Opa</h1>
+        </header>
+        <form id="todo__form">
+            <p>Adicione a sua tarefa:</p>
+            <div class="form__controle">
+                <input type="text" id="todo__input" placeholder="O que você vai fazer">
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        <form id="edit__form" class="hide">
+            <p>Edite sua tarefa:</p>
+            <div class="form__controle">
+                <input type="text" id="edite__input">
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button id="cancel__edit_btn">Cancelar</button>
+        </form>
+        <div id="toolbar">
+            <div id="search">
+                <h4>Pesquisar:</h4>
+                <form>
+                    <input type="text" id="search__input" placeholder="Buscar">
+                    <button id="erase__button">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+            <div id="filter">
+                <h4>Filtra:</h4>
+                <select name="" id="filter__select">
+                    <option value="all">Todos</option>
+                    <option value="done">Feitos</option>
+                    <option value="todo">A fazer</option>
+                </select>
+            </div>
+        </div>
+        <div class="todo__list">
+            <div class="todo done">
+                <h3>Estou fazendo alguma coisa</h3>
+                <button class="finish__todo">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="edit__todo">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="remove__todo">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="todo">
+                <h3>Estuda JavaScript</h3>
+                <button class="finish__todo">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="edit__todo">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="remove__todo">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
